@@ -87,11 +87,102 @@ $questions =[
         line-height: 24px;
         color:#000000de;
     }
+    .d_flex{
+        display:flex;
+        align-items:center
+    }
+
+    .site_header{
+        border-bottom:
+            1px solid #5f6368;
+        
+
+    }
+    .site_header_wrapper{
+        padding:0.9rem 1.3rem 0;
+    }
+
+
+    .privacy{
+        font-size:1.3rem;
+        color:#5f6368;
+        margin-left: 0.2rem
+    }
+    .logo{
+        padding-top:.5rem
+    }
+
+
+
+    .header_bottom{
+        margin-top:1rem;
+    }
+    .nav_list{
+        list-style:none;
+    }
+    .nav_list li a{
+        text-decoration:none;
+        color:#5f6368;
+    }
+    .nav_list li{
+        margin-right: 2.5rem;
+        font-size:.95rem;
+        padding-bottom: .5rem;
+        font-weight:500;
+
+    }
+    .active{
+        border-bottom:3px solid #3367d6
+    }
 
 
 </style>
 <body>
-    <header></header>
+    <header class="site_header">
+    <div class="site_header_wrapper">
+
+            <div class="header_top d_flex">
+                <div class="logo">
+                    <img src="https://www.gstatic.com/images/branding/googlelogo/svg/googlelogo_clr_74x24px.svg" alt="google logo">
+                </div>
+                <div class="privacy">Privacy & Terms</div>
+            </div>
+            <div class="header_bottom">
+                <nav>
+                    <ul class="nav_list d_flex">
+                            <li>
+                                <a href="#">
+                                    Overview
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                Privacy Policy
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                Terms of Service
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                Technologies
+                                </a>
+                            </li>
+                            <li class="active">
+                                <a href="#">
+                                FAQ
+                                </a>
+                            </li>
+                        
+
+                    </ul>
+                </nav>
+            </div>
+
+    </div>
+    </header>
     <main>
         <div class="main_container">
            
