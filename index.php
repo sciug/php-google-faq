@@ -51,32 +51,73 @@ $questions =[
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
+<style>
+    *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+        font-family: 'Roboto', sans-serif;
+    }
+    .main_container{
+        width: 60%;
+        margin:0 auto;
+    }
+    .qandA{
+        margin:5rem 0;
+
+    }
+    .question,
+    .answer{
+        color:#3c4043;
+
+    }
+    .question{
+        margin-bottom: 1.5rem;
+        font-family: 'Open Sans', sans-serif;
+
+    }
+    .answer{
+        margin-bottom: 2rem;
+        font-size: .9rem;
+        line-height: 24px;
+        color:#000000de;
+    }
+
+
+</style>
 <body>
     <header></header>
     <main>
         <div class="main_container">
-            <div class="q&a">
+           
                 <?php
                 foreach($questions as $question){?>
 
-                <h3>
-                <?php echo $question['question']?>
-                </h3>
+                <div class="qandA">
 
-                
-                <?php
-                $array_paragraphs= explode('%break%', $question['answer'] );
-                foreach($array_paragraphs as $paragraph){?>
+                    <h2 class="question">
+                    <?php echo $question['question']?>
+                    </h2>
 
-                <p><?php echo $paragraph ?> <br></p>
+                    
+                    <?php
+                    $array_paragraphs= explode('%break%', $question['answer'] );
+                    foreach($array_paragraphs as $paragraph){?>
 
-                <?php }
-                    ?>
-                
+                    <p class="answer"><?php echo $paragraph ?></p>
+
+                    <?php }
+                        ?>
+              </div>
+
 
                 <?php } ?>
-            </div>
+            
         </div>
     </main>
     
