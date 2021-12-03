@@ -53,88 +53,13 @@ $questions =[
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans:wght@700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <style>
-    *{
-        margin:0;
-        padding:0;
-        box-sizing:border-box;
-        font-family: 'Roboto', sans-serif;
-    }
-    .main_container{
-        width: 60%;
-        margin:0 auto;
-    }
-    .qandA{
-        margin:5rem 0;
-
-    }
-    .question,
-    .answer{
-        color:#3c4043;
-
-    }
-    .question{
-        margin-bottom: 1.5rem;
-        font-family: 'Open Sans', sans-serif;
-
-    }
-    .answer{
-        margin-bottom: 2rem;
-        font-size: .9rem;
-        line-height: 24px;
-        color:#000000de;
-    }
-    .d_flex{
-        display:flex;
-        align-items:center
-    }
-
-    .site_header{
-        border-bottom:
-            1px solid #5f6368;
-        
-
-    }
-    .site_header_wrapper{
-        padding:0.9rem 1.3rem 0;
-    }
-
-
-    .privacy{
-        font-size:1.3rem;
-        color:#5f6368;
-        margin-left: 0.2rem
-    }
-    .logo{
-        padding-top:.5rem
-    }
-
-
-
-    .header_bottom{
-        margin-top:1rem;
-    }
-    .nav_list{
-        list-style:none;
-    }
-    .nav_list li a{
-        text-decoration:none;
-        color:#5f6368;
-    }
-    .nav_list li{
-        margin-right: 2.5rem;
-        font-size:.95rem;
-        padding-bottom: .5rem;
-        font-weight:500;
-
-    }
-    .active{
-        border-bottom:3px solid #3367d6
-    }
-
+  
 
 </style>
 <body>
